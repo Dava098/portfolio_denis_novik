@@ -1,0 +1,63 @@
+.ourProjects {
+  max-width: 1298px;
+  width: 100%;
+  margin: clamp(1.875rem, 0.625rem + 6.25vw, 6.25rem) auto;
+  padding: 0 10px;
+  text-align: center;
+
+  .subtitle {
+    font-weight: 600;
+    font-size: clamp(1.125rem, 1.089rem + 0.18vw, 1.25rem);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #0078ff;
+  }
+
+  .title {
+    max-width: 684px;
+    font-size: clamp(2.188rem, 1.92rem + 1.34vw, 3.125rem);
+    line-height: 100%;
+    color: #222;
+    margin: clamp(0.938rem, 0.777rem + 0.8vw, 1.5rem) auto
+      clamp(1.875rem, 1.518rem + 1.79vw, 3.125rem);
+  }
+
+  .block_one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(0.938rem, 0.777rem + 0.8vw, 1.5rem);
+    margin-bottom: clamp(1.875rem, 1.518rem + 1.79vw, 3.125rem);
+
+    .btn {
+      border: 1px solid #07f;
+      border-radius: 50px;
+      padding: 17px clamp(1.063rem, 0.777rem + 1.43vw, 2.063rem);
+      background-color: #fff;
+      font-weight: 600;
+      font-size: clamp(0.938rem, 0.848rem + 0.45vw, 1.25rem);
+      color: #07f;
+      cursor: pointer;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: #07f;
+        color: #fff;
+      }
+
+      &.active {
+        background-color: #07f;
+        color: #fff;
+      }
+    }
+  }
+
+  .block_two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}

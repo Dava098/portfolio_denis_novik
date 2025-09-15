@@ -1,0 +1,120 @@
+.admin {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(1.875rem, 0.625rem + 6.25vw, 6.25rem) 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/admin.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+  }
+
+  .container {
+    max-width: 539px;
+    width: 100%;
+    border-radius: 24px;
+    padding: clamp(1.875rem, 0.982rem + 4.46vw, 5rem)
+      clamp(0.625rem, 0.089rem + 2.68vw, 2.5rem);
+    background-color: #fff;
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(0.938rem, 0.634rem + 1.52vw, 2rem);
+      margin-bottom: clamp(1.875rem, 1.268rem + 3.04vw, 4rem);
+
+      .title {
+        font-weight: 600;
+        font-size: 32px;
+        color: #333;
+      }
+
+      .label {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        color: #666;
+
+        .block {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .text {
+            width: 80%;
+          }
+
+          .btn {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            background-color: transparent;
+            font-size: 18px;
+            color: #666666cc;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+              transform: scale(0.9);
+            }
+          }
+        }
+
+        .inp {
+          border: 1px solid rgba(102, 102, 102, 0.35);
+          border-radius: 12px;
+          padding: 17px;
+          color: #666;
+        }
+      }
+
+      .sub {
+        border-radius: 32px;
+        background-color: #11111140;
+        font-size: 18px;
+        color: #fff;
+        padding: 14px;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+          transform: scale(0.9);
+        }
+      }
+    }
+
+    .box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+
+      .text {
+        color: #666;
+      }
+
+      .btn {
+        font-weight: 500;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #111;
+        background-color: transparent;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+}

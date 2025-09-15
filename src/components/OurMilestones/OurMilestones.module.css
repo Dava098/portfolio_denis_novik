@@ -1,0 +1,58 @@
+.OurMilestones {
+  background-color: #07f;
+  padding: clamp(1.875rem, 0.625rem + 6.25vw, 6.25rem) 10px
+    clamp(3.75rem, 2.143rem + 8.04vw, 9.375rem);
+
+  .container {
+    max-width: 1278px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    .subtitle {
+      font-weight: 600;
+      font-size: clamp(1.125rem, 1.089rem + 0.18vw, 1.25rem);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #e9efff;
+    }
+
+    .title {
+      max-width: 684px;
+      font-size: clamp(2.5rem, 2.321rem + 0.89vw, 3.125rem);
+      line-height: 100%;
+      color: #fff;
+      margin: clamp(0.938rem, 0.777rem + 0.8vw, 1.5rem) auto
+        clamp(3.75rem, 2.857rem + 4.46vw, 6.875rem);
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      .card {
+        max-width: 297px;
+        width: 100%;
+        border-radius: 15px;
+        padding: 30px 10px;
+        background-color: #fff;
+
+        .subject {
+          font-size: 50px;
+          line-height: 100%;
+          color: #333;
+          margin-bottom: 15px;
+        }
+
+        .text {
+          font-weight: 600;
+          font-size: 20px;
+          color: #333;
+        }
+      }
+    }
+  }
+}

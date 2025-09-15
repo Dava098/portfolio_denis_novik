@@ -1,0 +1,17 @@
+.software {
+  padding: clamp(2.5rem, 2.321rem + 0.89vw, 3.125rem)
+    clamp(0.625rem, -0.643rem + 6.34vw, 5.063rem);
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 1502px) {
+    gap: 20px;
+  }
+
+  @media (max-width: 1030px) {
+    flex-direction: column;
+  }
+}

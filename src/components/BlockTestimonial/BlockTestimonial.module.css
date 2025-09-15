@@ -1,0 +1,49 @@
+.blockTestimonial {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 30px 20px;
+  background-color: #fff;
+  max-width: 297px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #07f;
+    color: #fff;
+  }
+
+  &.activeSlide {
+    background-color: #07f;
+    color: #fff;
+
+    .subtitle {
+      color: #fff;
+    }
+  }
+
+  .img {
+    border-radius: 50%;
+    width: 150px;
+  }
+
+  .text {
+    line-height: 125%;
+  }
+
+  .title {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: -20px;
+  }
+
+  .subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    color: #666;
+  }
+}

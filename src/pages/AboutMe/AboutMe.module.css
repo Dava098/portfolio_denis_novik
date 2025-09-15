@@ -1,0 +1,108 @@
+.aboutMe {
+  max-width: 1277px;
+  width: 100%;
+  margin: clamp(3.125rem, 2.232rem + 4.46vw, 6.25rem) auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0 10px;
+
+  @media (max-width: 1134px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    width: clamp(21.875rem, 16.929rem + 24.73vw, 39.188rem);
+  }
+
+  .container {
+    .subtitle {
+      font-weight: 600;
+      font-size: clamp(1.125rem, 1.089rem + 0.18vw, 1.25rem);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #07f;
+    }
+
+    .title {
+      font-size: clamp(2.5rem, 2.321rem + 0.89vw, 3.125rem);
+      color: #222;
+      margin: 17px 0 25px;
+
+      .extra {
+        color: #07f;
+      }
+    }
+
+    .text {
+      font-size: 18px;
+      line-height: 139%;
+      color: #222;
+    }
+
+    .block_one {
+      display: flex;
+      gap: 25px;
+      margin: clamp(3.125rem, 2.232rem + 4.46vw, 6.25rem) 0
+        clamp(1.875rem, 1.607rem + 1.34vw, 2.813rem);
+
+      @media (max-width: 1134px) {
+        flex-direction: column;
+      }
+
+      .btn {
+        border: 1px solid #07f;
+        border-radius: 50px;
+        padding: 17px 33px;
+        background-color: #fff;
+        font-weight: 600;
+        font-size: 20px;
+        color: #07f;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+          background-color: #07f;
+          color: #fff;
+        }
+
+        &.active {
+          background-color: #07f;
+          color: #fff;
+        }
+      }
+    }
+
+    .block_two {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      .box {
+        @media (max-width: 1134px) {
+          text-align: left;
+        }
+
+        .desc {
+          font-weight: 600;
+          font-size: clamp(1.125rem, 1.089rem + 0.18vw, 1.25rem);
+          line-height: 150%;
+          color: #222;
+        }
+
+        .line_one {
+          border-radius: 10px;
+          background-color: #eee;
+          height: 17px;
+
+          .line_two {
+            height: 100%;
+            border-radius: 10px;
+            background: #07f;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.skills {
+  max-width: 1278px;
+  width: 100%;
+  margin: clamp(1.875rem, 0.625rem + 6.25vw, 6.25rem) auto;
+  padding: 0 10px;
+
+  .block_one {
+    text-align: center;
+
+    .subtitle {
+      font-weight: 600;
+      font-size: clamp(1.125rem, 1.089rem + 0.18vw, 1.25rem);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #0078ff;
+    }
+
+    .title {
+      font-size: clamp(2.5rem, 2.321rem + 0.89vw, 3.125rem);
+      line-height: 100%;
+      color: #222;
+      margin: 15px 0;
+
+      .extra {
+        color: #07f;
+      }
+    }
+
+    .text {
+      max-width: 652px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 139%;
+      color: #222;
+    }
+  }
+
+  .block_two {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin: clamp(1.25rem, 1.071rem + 0.89vw, 1.875rem) 0;
+
+    @media (max-width: 1134px) {
+      justify-content: center;
+    }
+
+    .btn {
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #07f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      cursor: pointer;
+      transition: 0.5s;
+
+      .icon path {
+        transition: 0.5s;
+      }
+
+      &:hover {
+        background-color: #0077ff;
+
+        .icon path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  .mySwiper {
+    padding-top: 5px;
+  }
+}
